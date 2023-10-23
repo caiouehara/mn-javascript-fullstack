@@ -5,4 +5,9 @@ function getRandom(request, response){
     response.send(breads[i])
 }
 
-export default { getRandom }
+function getById(request, response){
+    console.log(request.query.id)
+    response.send(breads.find( (i) => i == id))
+}
+
+export default { getRandom, getById }
