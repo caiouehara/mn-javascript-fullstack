@@ -8,7 +8,6 @@ const routes = express.Router()
 routes.get('/breed', breedsController.getRandom)
 routes.get('/breeds/:id', breedsController.getById)
 
-//don't work find by pk
 routes.get('/clients', clientController.findAll)
 routes.get('/clients/:id', clientController.findByPk)
 routes.post('/clients', clientController.create)

@@ -7,7 +7,7 @@ let findAll = (request, response) => {
 }
 
 let findByPk = (request, response) => {
-    Client.findByPk(request.params.id).then(result => {
+    Pet.findByPk(request.params.id).then(result => {
         response.status(200).json(result)
     }).catch(e => { console.log(e) })
 }
