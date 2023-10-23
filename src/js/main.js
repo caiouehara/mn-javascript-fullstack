@@ -1,5 +1,6 @@
-function hello(name){
-    console.log('Hello ' + name)
+
+let main = () => {
+    console.log("Program started")
 }
 
-hello("Caio")
+main()
