@@ -6,7 +6,8 @@ function getRandom(request, response){
 }
 
 function getById(request, response){
-    console.log(request.query.id)
+    //not updated
+    console.log(request.params.id)
     response.send(breads.find( (i) => i == id))
 }
 
