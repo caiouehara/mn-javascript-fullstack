@@ -1,9 +1,12 @@
 import express from 'express'
-import breeds from '../controllers/dogbreads.controller.js'
+import breedsController from '../controllers/dogbreads.controller.js'
+import clientController from '../controllers/client.controller.js'
 
 const routes = express.Router()
 
-routes.get('/breed', breeds.getRandom)
-routes.get('/breeds/:id', breeds.getById)
+routes.get('/breed', breedsController.getRandom)
+routes.get('/breeds/:id', breedsController.getById)
+
+routes.get('/clients', clientController.findAll)
 
 export default routes
